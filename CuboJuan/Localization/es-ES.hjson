@@ -1,0 +1,19 @@
+
+Mods: {
+	CuboJuan: {
+		DisplayName: "Mascota CuboJuan"
+
+		Buffs: {
+			CuboJuanPetBuff: {
+				Description: "Un CuboJuan en miniatura te sigue"
+			}
+		}
+
+		Items: {
+			CuboJuanPetItem: {
+				Tooltip: "Invoca un CubeJuan en miniatura que te sigue"
+			}
+		}
+
+	}
+}
