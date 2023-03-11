@@ -4,16 +4,17 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
+using Terraria.Localization;
 
-namespace CuboJuan {
+namespace CuboJuan.Items {
 
    public class CuboJuanPetItem : ModItem {
 
       public override string Texture => "CuboJuan/Assets/Textures/Item_CuboJuan";
 
       public override void SetStaticDefaults() {
-         DisplayName.SetDefault("CuboJuan Pet");
-         Tooltip.SetDefault("Summons a miniature CubeJuan to follow you");
+         DisplayName.SetDefault(Language.GetTextValue("Mods.CuboJuan.Items.CuboJuanPetItem.DisplayName"));
+         Tooltip.SetDefault(Language.GetTextValue("Mods.CuboJuan.Items.CuboJuanPetItem.Tooltip"));
 
          CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
       }

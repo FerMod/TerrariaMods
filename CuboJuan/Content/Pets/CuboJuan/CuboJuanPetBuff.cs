@@ -1,16 +1,17 @@
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CuboJuan {
+namespace CuboJuan.Items {
 
    public class CuboJuanPetBuff : ModBuff {
 
       public override string Texture => "CuboJuan/Assets/Textures/Buff_CuboJuan";
 
       public override void SetStaticDefaults() {
-         DisplayName.SetDefault("CuboJuan Pet");
-         Description.SetDefault("A miniature CuboJuan is following you");
+         DisplayName.SetDefault(Language.GetTextValue("Mods.CuboJuan.Buffs.CuboJuanPetBuff.DisplayName"));
+         Description.SetDefault(Language.GetTextValue("Mods.CuboJuan.Buffs.CuboJuanPetBuff.Description"));
 
          Main.buffNoTimeDisplay[Type] = true;
          Main.vanityPet[Type] = true;

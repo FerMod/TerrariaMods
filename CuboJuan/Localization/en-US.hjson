@@ -1,0 +1,26 @@
+
+Mods: {
+	CuboJuan: {
+		DisplayName: "CuboJuan Pet"
+
+		Buffs: {
+			CuboJuanPetBuff: {
+				DisplayName: "{$Mods.CuboJuan.DisplayName}"
+				Description: "A miniature CuboJuan is following you"
+			}
+		}
+
+		Items: {
+			CuboJuanPetItem: {
+				DisplayName: "{$Mods.CuboJuan.DisplayName}"
+				Tooltip: "Summons a miniature CubeJuan to follow you"
+			}
+		}
+
+		Projectiles: {
+			CuboJuanPetProjectile: {
+				DisplayName: "{$Mods.CuboJuan.DisplayName}"
+			}
+		}
+	}
+}

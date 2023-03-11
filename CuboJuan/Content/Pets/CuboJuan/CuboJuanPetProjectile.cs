@@ -3,19 +3,20 @@ using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CuboJuan {
+namespace CuboJuan.Items {
 
    public class CuboJuanPetProjectile : ModProjectile {
 
       public override string Texture => "CuboJuan/Assets/Textures/Projectile_CuboJuan";
 
-      private const String DeathSoundPath = "CuboJuan/Assets/Sounds/Death_CuboJuan";
+      private const string DeathSoundPath = "CuboJuan/Assets/Sounds/Death_CuboJuan";
       private static readonly float[] screamCooldown = new float[byte.MaxValue];
 
       public override void SetStaticDefaults() {
-         DisplayName.SetDefault("CuboJuan Pet");
+         DisplayName.SetDefault(Language.GetTextValue("Mods.CuboJuan.Projectiles.CuboJuanPetProjectile.DisplayName"));
 
          Main.projPet[Projectile.type] = true;
       }
